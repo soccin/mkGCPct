@@ -9,7 +9,7 @@ dd=read.delim(fname)
 chromosomes=unique(dd$X.1_usercol)
 
 gcpctdb=list()
-for(ci in seq(len(chromosomes))){
+for(ci in seq(length(chromosomes))){
     chr=chromosomes[ci]
     print(chr)
     ii=which(dd$X.1_usercol==chr)
